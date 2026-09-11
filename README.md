@@ -1,6 +1,6 @@
 # Administracja mapowaniem pól faktury KSeF per dostawca (enova365)
 
-> Element większej całości: **[Obieg faktur zakupu z KSeF w enova365 — mapa rozwiązania](../../trynityeu/enova365-obieg-faktur-ksef)**
+> Element większej całości: **[Obieg faktur zakupu z KSeF w enova365 — mapa rozwiązania](https://github.com/trynityeu/enova365-obieg-faktur-ksef)**
 
 Dodatek do systemu ERP **enova365** (Soneta sp. z o.o.) — narzędzie
 administracyjne do tworzenia i utrzymywania **schematu mapowania XML** dla
@@ -11,13 +11,13 @@ osobny dodatek importujący.
 Import faktur KSeF realizują **dwa odrębne dodatki**, zależnie od rodzaju
 dokumentu:
 
-- [Import faktur zakupu materiałowego (ZME) z dopasowaniem do zamówień](../../trynityeu/enova365-import-faktur-ksef-dopasowanie)
+- [Import faktur zakupu materiałowego (ZME) z dopasowaniem do zamówień](https://github.com/trynityeu/enova365-import-faktur-ksef-dopasowanie)
   — **jedyny odbiorca** schematów utrzymywanych tym dodatkiem;
-- [Import faktur kosztowych (ZKE) i samochodowych (ZSE)](../../trynityeu/enova365-import-faktur-ksef-koszty-pojazdy)
+- [Import faktur kosztowych (ZKE) i samochodowych (ZSE)](https://github.com/trynityeu/enova365-import-faktur-ksef-koszty-pojazdy)
   — własny zestaw reguł księgowych, ze schematów mapowania **nie korzysta**.
 
 O tym, którą z tych ścieżek pojedzie konkretna faktura, rozstrzyga
-[automatyczna klasyfikacja przy pobraniu z KSeF](../../trynityeu/enova365-klasyfikacja-faktur-ksef).
+[automatyczna klasyfikacja przy pobraniu z KSeF](https://github.com/trynityeu/enova365-klasyfikacja-faktur-ksef).
 
 To repozytorium zawiera wyłącznie **opis funkcjonalny** — bez kodu
 źródłowego, bez rzeczywistych schematów dostawców, bez danych klienta.
@@ -28,7 +28,7 @@ Każdy dostawca inaczej wypełnia faktury w formacie KSeF (schemat **FA(3)**):
 inny sposób zapisu numeru zamówienia, inne pole na indeks towaru, inne
 jednostki miary, czasem numer zamówienia w ogóle nieobecny albo ukryty
 w polu opisowym razem z innymi informacjami.
-[Import faktur ZME](../../trynityeu/enova365-import-faktur-ksef-dopasowanie)
+[Import faktur ZME](https://github.com/trynityeu/enova365-import-faktur-ksef-dopasowanie)
 potrzebuje wiedzieć, **jak konkretnie czytać XML tego dostawcy** —
 ale ta wiedza zmienia się w czasie (dostawca zmienia system, dopisuje nowe
 pole, zaczyna wystawiać nowy rodzaj usługi) i nie powinna wymagać zmiany
@@ -98,11 +98,11 @@ przepisywania od zera.
   importujący — on wykonuje faktyczne dopasowanie pozycji faktury do
   zamówień zakupu i tworzy dokument ewidencji zakupu materiałowego (ZME).
   Ten dodatek administracyjny niczego nie importuje ani nie księguje.
-  → [Import faktur zakupu KSeF z automatycznym dopasowaniem do zamówień](../../trynityeu/enova365-import-faktur-ksef-dopasowanie)
+  → [Import faktur zakupu KSeF z automatycznym dopasowaniem do zamówień](https://github.com/trynityeu/enova365-import-faktur-ksef-dopasowanie)
 - Dla faktur kosztowych i samochodowych (inny proces, inny rodzaj
   dokumentu) obowiązuje odrębny import z własnym zestawem reguł — nie
   korzysta ze schematów utrzymywanych tym dodatkiem.
-  → [Import faktur kosztowych i samochodowych z KSeF](../../trynityeu/enova365-import-faktur-ksef-koszty-pojazdy)
+  → [Import faktur kosztowych i samochodowych z KSeF](https://github.com/trynityeu/enova365-import-faktur-ksef-koszty-pojazdy)
 
 ## Jakie cechy (pola konfiguracyjne enova365) są wykorzystywane
 
